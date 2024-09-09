@@ -13,6 +13,10 @@
 import AppFooter from "./components/AppFooter.vue";
 import AppHeader from "./components/AppHeader.vue";
 
+// Anywhere in your Vue application
+
+
+
 
 export default {
   components: {
