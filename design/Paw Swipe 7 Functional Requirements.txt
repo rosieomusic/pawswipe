@@ -1,0 +1,42 @@
+﻿Paw Swipe
+
+Paw Swipe is a full stack web application made for matching animals and humans. 
+The database was built using SQL and managed in PostgresSQL. 
+The database is run on a local server built in Java, 
+allowing the data to be used in an API. 
+The API is then accessed through Javascript and presented to the user 
+in a fully functional website.
+
+
+Desktop Prototype
+"https://www.figma.com/proto/TuKSKIJdEWoArDbuvJCgqx/Login-Page?node-id=1-2&t=XOk9MpQWDGOdhZ78-1&starting-point-node-id=1%3A2"
+(to see Admin view press Shift + A on the login page)
+
+
+Mobile Prototype
+"https://www.figma.com/proto/TuKSKIJdEWoArDbuvJCgqx/Login-Page?node-id=3-63&t=XOk9MpQWDGOdhZ78-1&starting-point-node-id=3%3A63"
+(to see Admin view press Shift + A on the login page)
+
+
+
+
+
+
+Paw Swipe 7 Functional Requirements
+
+
+Admin User
+* As an admin user I can create, update, delete and view animal details.
+* As an admin user I can create, update, delete and view shelter details.
+
+
+Anon User
+* As an anonymous user I can view animal cards.
+* As an anonymous user I can view animal details
+* As an anonymous user I can search/filter animal cards
+* As an anonymous user I can view shelters
+
+
+Registered User
+* As a registered user I can save animals to a favorites list/remove animals from list
+* As a registered user I can view my favorite animals page

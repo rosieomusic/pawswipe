@@ -1,0 +1,29 @@
+/* Baseline styles */
+
+
+:root{
+  --app_text: black;
+  --header_bg: #5C6E92;
+  --footer_bg: #C7A5BA;
+  --main_bg: #decec1;
+  --accent_cr: #5C6E92;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
