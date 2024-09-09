@@ -1,11 +1,27 @@
 import { createStore as _createStore } from 'vuex';
 import axios from 'axios';
 
+const API_URL = 'https://embarrassed-karry-rosieomusic-3364938a.koyeb.app'; 
+
 export function createStore(currentToken, currentUser) {
   let store = _createStore({
     state: {
       token: currentToken || '',
       user: currentUser || {},
+    },
+    actions: {
+      async fetchData({ commit }) {
+        try {
+          const response = await fetch(`${API_URL}/some-endpoint`);
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          commit('setData', data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      },
     },
     mutations: {
       SET_AUTH_TOKEN(state, token) {
