@@ -12,8 +12,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  define: {
-    _API_URL:JSON.stringify('https://embarrassed-karry-rosieomusic-3364938a.koyeb.app'),
-  },
   
 });
