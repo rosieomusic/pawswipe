@@ -1,4 +1,4 @@
-import { createRouter as createRouter, createWebHistory } from 'vue-router'
+import { createRouter as createRouter, createWebHashHistory } from 'vue-router'
 import { useStore } from 'vuex'
 
 // Import components
@@ -21,7 +21,7 @@ import DetailsView from "../views/DetailsView.vue";
  */
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'home',
     component: HomeView,
     meta: {
@@ -81,7 +81,7 @@ const routes = [
 
 // Create the router
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: routes
 });
 
