@@ -1,11 +1,10 @@
 <template>
   <div id="paw-swipe-app">
-    <AppHeader/>
+    <AppHeader />
     <main>
       <router-view />
     </main>
-
-    <AppFooter/>
+    <AppFooter />
   </div>
 </template>
 
@@ -39,7 +38,7 @@ export default {
     "header"
     "main"
     "footer";
-    background-color: var(--main_bg);
+  background-color: var(--main_bg);
 
 }
 
@@ -52,6 +51,7 @@ export default {
 #app-main {
   grid-area: main;
   width: 100vw;
+  height: 100vh;
 }
 
 #app-footer {
@@ -72,12 +72,8 @@ export default {
       "main"
       "footer";
   }
-  #app-footer {
-
-  padding: 0px;
-  bottom: 0;
   
-}
+
 
 
  

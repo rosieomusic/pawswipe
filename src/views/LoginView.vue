@@ -94,13 +94,14 @@ form{
   align-items: center;
   height: 100%;
   width: 100%;
+  margin-bottom: 15%;
   
 }
 #login{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   flex-direction: column;
 }
@@ -109,6 +110,7 @@ form{
   border-radius: 10px;
   width: 400px;
   padding: 2%;
+  
 }
 #username, #password{
   border-radius: 10px;
@@ -160,6 +162,7 @@ label{
 }
 @media only screen and (max-width: 425px){
   form{
+    margin-bottom: 30%;
     
   
     padding-top: 30px;

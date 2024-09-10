@@ -74,6 +74,7 @@
       border: none;
       padding: 10px 20px;
       cursor: pointer;
+      margin-right: 6%;
     }
     nav ul {
       list-style: none; 
@@ -106,7 +107,7 @@
       height: 100%;
     }
     h1{
-      font-size: 30px;
+      font-size: 25px;
       margin-right: 15px;
       margin-left: 20px;
     

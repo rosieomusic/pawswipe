@@ -126,6 +126,8 @@ export default {
     .search{
         margin-left: 5%;
         margin-right: 5%;
+        
+        
     }
     #searchbar{
         width: 200px;
@@ -144,7 +146,9 @@ export default {
     }
 
     .filter-buttons{
-        margin-top: 5px;
+        display: flex;
+        margin-top: 1%;
+        margin-left: 5%
    
     }
 }
