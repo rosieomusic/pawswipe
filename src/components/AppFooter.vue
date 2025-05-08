@@ -26,7 +26,10 @@
 				></i>
 			</router-link>
 		</div>
-		<h1 id="copy">&copyCopyright Rose O'Malley 2024</h1>
+		<h1 id="copy">
+			&copy; Rose O'Malley 2024 <br />
+			All rights reserved
+		</h1>
 	</footer>
 </template>
 
@@ -45,6 +48,7 @@
 		padding: 10%;
 	}
 	#icons {
+		font-size: 0.7em;
 		margin-left: 2%;
 	}
 	#copy {
@@ -68,25 +72,25 @@
 	@media only screen and (max-width: 425px) {
 		#app-footer {
 			display: flex;
-			flex-direction: column-reverse;
-			height: 95px;
+			flex-direction: column;
+			height: 5em;
 			margin-right: 10%;
 			padding-top: 10px;
 		}
-		i {
-			font-size: 55px;
+		#icons {
+			font-size: 0.5em;
+			margin-left: 0%;
 		}
+
 		#insta,
 		#fb,
 		#yt {
 			margin-right: 50px;
 		}
 		#copy {
-			margin-right: 2%;
-			padding-top: 10%;
-			margin-top: 2%;
-			margin-bottom: 3%;
-			font-size: 16px;
+			font-size: 0.7em;
+			font-weight: 400;
+			text-align: center;
 		}
 	}
 </style>

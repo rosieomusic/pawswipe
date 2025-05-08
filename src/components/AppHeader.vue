@@ -5,7 +5,10 @@
 			src="/img/FrankiePainted.png"
 			alt="Frankie"
 		/>
-		<h1>Paw Swipe</h1>
+		<div>
+			<h1>Paw Swipe</h1>
+		</div>
+
 		<div id="container">
 			<img
 				id="paw"
@@ -67,6 +70,7 @@
 		font-size: 85px;
 		font-weight: 800;
 		margin-right: 10%;
+		white-space: nowrap;
 	}
 	.menu-button {
 		display: none;
@@ -102,24 +106,27 @@
 		}
 
 		#app-header {
-			justify-content: stretch;
+			display: flex;
 			height: 100%;
+			justify-content: space-between;
 		}
 		h1 {
-			font-size: 25px;
-			margin-right: 15px;
-			margin-left: 20px;
+			font-size: 1.5em;
+			text-align: center;
+			white-space: nowrap;
 		}
 		#logo {
 			height: 100px;
 			width: 100px;
 			margin-left: 15px;
+			padding: 0.5em;
 		}
 		#paw {
 			height: 60px;
 			width: 69px;
-			margin-left: 25px;
-			margin-top: 5%;
+			padding-top: 0.7em;
+			padding-left: 1em;
+			margin-left: 1em;
 		}
 		button {
 			background-color: var(--header_bg);

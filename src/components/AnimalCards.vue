@@ -60,32 +60,31 @@
 
 	#cards {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
 		background-color: #b6abc1;
-		margin-left: 15%;
-		margin-right: 15%;
-		margin-bottom: 10%;
-		height: 100%;
+		margin: 0 auto;
+		padding: 20px;
+		max-width: 1200px;
 		transition: 0.5s;
-		justify-content: center;
+		box-sizing: border-box;
 	}
 
 	.card {
-		height: 350px;
-		width: 300px;
+		width: 100%;
+		max-width: 100%;
 		background-color: #c0c5ce;
 		border: 1px solid black;
 		border-radius: 10px;
 		padding: 5%;
-		margin: 5%;
 		text-align: center;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s;
 	}
 
 	.card:hover {
 		cursor: pointer;
-		transform: translateY(-20px);
+		transform: translateY(-10px);
 	}
 
 	.card img {
@@ -94,25 +93,18 @@
 		object-fit: cover;
 		border-radius: 10px;
 		margin-top: 8px;
-		image-rendering: auto;
 	}
 
 	img {
 		object-fit: fill;
 	}
 
-	@media only screen and (max-width: 425px) {
+	@media (max-width: 425px) {
 		#cards {
 			grid-template-columns: 1fr;
-			margin-right: 5%;
-			margin-left: 5%;
-			margin-bottom: 10%;
-			overflow: hidden;
 		}
-
 		.card {
-			margin-right: 40px;
-			margin-left: 40px;
+			padding: 10px;
 		}
 	}
 </style>

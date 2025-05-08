@@ -119,14 +119,16 @@
 <style scoped>
 	.home {
 		height: 100%;
-		overflow: hidden;
 		width: 100%;
+		margin-bottom: 6em;
+		display: block;
 	}
 
 	#animalsTitle {
-		margin-left: 40%;
+		text-align: center;
 		font-size: 32px;
 		font-weight: 900;
+		margin: 1rem 0;
 	}
 
 	nav {
@@ -135,7 +137,9 @@
 	}
 
 	section {
-		grid-area: section;
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	@media only screen and (max-width: 425px) {
