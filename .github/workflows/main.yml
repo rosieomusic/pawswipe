@@ -3,7 +3,7 @@ name: Deploy Vite to GitHub Pages
 on:
   push:
     branches:
-      - main # Change if your default branch is not 'main'
+      - main # or your default branch name
 
 permissions:
   contents: read
@@ -31,7 +31,7 @@ jobs:
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: dist # Vite outputs to 'dist' by default
+          path: dist # default Vite output folder
 
   deploy:
     needs: build
